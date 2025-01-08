@@ -1,0 +1,45 @@
+
+/*
+    this is the css for the <nav/>
+*/
+nav {
+    /* background: #1942A6; */
+    background: var(--bg-color);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.9rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);  
+}
+
+/*
+    this is the individual anchors or <a/>
+*/
+nav a {
+    background: transparent; /*changes the background of home, about me, etc */
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/*
+    this is what happens if you hover over the text
+*/
+nav a:hover {
+    background: var(--second-bg-color);/*changing opacity. its at 0.4 rn*/
+}
+
+nav a.active {
+    background: var(--second-bg-color);/*color of bubble*/
+    color: var(--main-color); /*color of text*/
+}

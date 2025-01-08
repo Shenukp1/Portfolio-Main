@@ -1,0 +1,139 @@
+/*
+  This is the general font i will be using 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* === 1. CSS Reset === */
+*{
+  margin: 0; /* Remove default margin from all elements (e.g., body, headings, paragraphs) */
+  padding: 0; /* Remove default padding from all elements (e.g., ul, ol, buttons) */
+  outline: 0; /* Remove default outlines (e.g., focus outlines on buttons, inputs) */
+  border: 0; /* Remove default borders (e.g., fieldset, iframe, buttons) */
+  box-sizing: border-box; /* Ensure that padding and borders are included in the element's width and height.  */
+  list-style: none; /* Remove default list styling (e.g., bullets for ul, numbers for ol) */
+  text-decoration: none; /* Remove default underlines from hyperlinks (<a> tags) */
+
+}
+
+
+
+
+
+
+/* =============== 2. Root Variables =============== */
+
+
+/* Define global CSS variables for colors, fonts, etc. */
+:root {
+
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+
+
+}
+
+
+/*
+This ensures that when you click on anchor links (e.g., #section), 
+the page scrolls smoothly instead of jumping instantly. 
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* This removes the scrollbar's visual appearance but does NOT disable scrolling functionality. */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+/* =============== 3. Body Defaults =============== */
+
+
+/* Set global defaults for the <body> tag */
+body {
+  font-family: 'Montserrat', sans-serif;    /*Set the default font family for all text on the page*/
+  background: var(--second-bg-color); /*Set the background color of the body.*/
+  color: var(--text-color); /* Set the default text color. */
+  line-height: 1.7;  /*Set the line spacing between lines of text to improve readability.*/
+}
+
+/* === 4. Global Typography === */
+/* TODO: edit these below - you can seperate the h1-h5 tags to increase size of them*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  line-height: 1.4; /* Adjusting the space between h tags */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column; /* Stack children vertically - allows h2 and h5 tags to be on top*/
+  align-items: center; /* Center horizontally */
+  
+}
+
+section > h2 {
+  color: var(--main-color);
+  margin-bottom: 3rem;
+
+}
+
+section > h2,
+section > h5 {
+text-align: center;
+color: var(--text-color)
+}
+
+/* =============== 5. Links =============== */
+
+a {
+  color: var(--bg-color);
+  transition: var(--transition);
+}
+
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--main-color);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+.btn-primary:hover {
+  background: var(--color-bg);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}

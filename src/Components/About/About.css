@@ -1,0 +1,94 @@
+
+.about_container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px; /* Limits the container width */
+    
+}
+
+.highlight {
+    color: var(--main-color)
+}
+
+/* ends here - image styling */
+
+.about_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    
+}
+
+.about_card {
+    background: var(--bg-color);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about_card:hover {
+    background: transparent;
+    border-color: var(--main-color);
+    cursor: default;
+}
+
+.about_icon {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.about_card small {
+    font-size: 0.7rem;
+    color: var(--color-primary);
+}
+
+.about_card h5 {
+    font-size: 0.95rem;
+}
+
+.about_content p {
+    margin: 2rem 0 2.6rem;
+    color: var(--text-color);
+}
+
+/* media query for medium device */
+@media screen and (max-width: 1024px) {
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about_me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about_content p {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+
+/* for small devices */
+@media screen and (max-width: 600px) {
+    .about_me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about_cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about_content {
+        text-align: center;
+    }
+
+    .about_content p {
+        margin: 1.5rem 0;
+    }
+}

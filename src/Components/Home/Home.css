@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('src/assets/Images/done.png') no-repeat center center/cover;
+    padding: 50px 10%;
+    height:100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.home_container {
+    z-index: 2; /* Ensures text appears above the background */
+    
+    text-align: left;
+}
+
+.cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: left;
+}
+
+.highlight{
+    color: var(--main-color)
+}
