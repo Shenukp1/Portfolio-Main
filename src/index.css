@@ -3,7 +3,8 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* === 1. CSS Reset === */
+/* =============== 1. CSS Reset =============== */
+
 *{
   margin: 0; /* Remove default margin from all elements (e.g., body, headings, paragraphs) */
   padding: 0; /* Remove default padding from all elements (e.g., ul, ol, buttons) */
@@ -26,10 +27,37 @@
 /* Define global CSS variables for colors, fonts, etc. */
 :root {
 
-  --bg-color: #1f242d;
+  /* --bg-color: #1f242d;
   --second-bg-color: #323946;
   --text-color: #fff;
+  --main-color: #0ef; */
+
+  --bg-color: #1c2536;
+  --second-bg-color: #1a2563;
+  --text-color: #fff;
   --main-color: #0ef;
+
+  --tryout-color: #1a2563;
+
+  /* Colors I like  
+    1. --main-color: #2a6dd4;
+    2.
+  
+  */
+
+  /*
+    COLORS
+    1. #d89cf2
+    2. #1f2870
+    3. #2a6dd4
+    4. #7774dc
+    5. #359aec
+    6. #359aec
+    7. #359aec
+    8. #359aec
+    9. #6ec0f8
+    10. #6ec0f8
+  */
 
 
 }
@@ -59,7 +87,7 @@ html {
 /* Set global defaults for the <body> tag */
 body {
   font-family: 'Montserrat', sans-serif;    /*Set the default font family for all text on the page*/
-  background: var(--second-bg-color); /*Set the background color of the body.*/
+  background: var(--tryout-color); /*Set the background color of the body.*/
   color: var(--text-color); /* Set the default text color. */
   line-height: 1.7;  /*Set the line spacing between lines of text to improve readability.*/
 }
@@ -123,13 +151,13 @@ a {
 
 .btn:hover {
   background: var(--main-color);
-  color: var(--bg-color);
+  color: var(--text-color);
   border-color: transparent;
 }
 
 .btn-primary {
   background-color: var(--main-color);
-  color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .btn-primary:hover {
