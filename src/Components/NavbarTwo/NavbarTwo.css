@@ -1,0 +1,65 @@
+/* Navbar Container */
+nav {
+    background: var(--bg-color);
+    width: max-content;
+    display: flex;
+    gap: 0.8rem;
+    padding: .7rem 1.5rem;/* Top-Bottom: y-padding, Left-Right: x-padding */
+    z-index: 2; /* Ensures navbar stays on top */
+    position: fixed;/* stays at the buttom*/
+    left: 50%; /* keeps it in the middle but might be not needed because of flex*/
+    transform: translateX(-50%);/* keeps it in the middle but might be not needed because of flex*/
+    bottom: 2rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+/* Individual Anchor Tags */
+nav a {
+    background: transparent;
+    padding: .5rem 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    gap: .5rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Icon Style */
+nav a .icon {
+    font-size: 1.2rem;
+}
+
+/* Label Style (Initially Hidden) */
+nav a .label {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    
+
+}
+
+/* Hover Effect */
+nav a:hover {
+    background: var(--second-bg-color);
+    border-radius: 50%; /* Ensure hover effect remains circular */
+    
+}
+
+/* Active Tab Style */
+nav a.active {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem; /* make the oval look go away */
+    transition: border-radius 0.3s ease, background 0.3s ease; /* Smooth transition for radius */
+    
+}
+
+/* Only Show Label on Active Tab */
+nav a:not(.active) .label {
+    display: none;
+}
