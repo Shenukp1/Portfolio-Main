@@ -8,7 +8,7 @@ import './About.css'
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <h5>Get To Know</h5>
       <h2><span className="highlight">About Me</span></h2>
 

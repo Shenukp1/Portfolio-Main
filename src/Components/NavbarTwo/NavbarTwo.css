@@ -17,12 +17,12 @@ nav {
 /* Individual Anchor Tags */
 nav a {
     background: transparent;
-    padding: .5rem 1rem;
+    padding: .5rem .7rem;/* Top-Bottom: y-padding, Left-Right: x-padding */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-color);
+    color: var(--main-color);
     font-size: 1.1rem;
     font-weight: 700;
     gap: .5rem;
@@ -31,15 +31,36 @@ nav a {
 
 /* Icon Style */
 nav a .icon {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem; /* Consistent size for the icon container */
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    
+    
+}
+
+/* Active Icon Styling */
+nav a.active .icon {
+    color: var(--main-color); /* Change icon color when active */
+    transform: scale(1.1); /* Slight enlargement for active icon */
+    transition: transform 0.2s ease;
+    border: 2px solid var(--main-color);
 }
 
 /* Label Style (Initially Hidden) */
 nav a .label {
     font-size: 0.9rem;
     white-space: nowrap;
-    
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the start of its container */
+    padding: 0; /* Remove internal padding */
 }
 
 /* Hover Effect */

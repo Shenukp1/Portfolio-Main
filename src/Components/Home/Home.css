@@ -17,6 +17,28 @@ header {
     
 }
 
+.home_social {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 5rem;
+    
+}
+
+/* Default color for social icons */
+.home_social .social-link {
+    color: #ffffff; /* Default white color */
+    font-size: 2rem; 
+    margin: 0 2px; /* space between icons top: Y, bottom: x  */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change color on hover */
+.home_social .social-link:hover {
+    color: var(--main-color); 
+}
+
+
 h1{
     font-size: 3.5rem;
 }

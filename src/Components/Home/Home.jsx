@@ -1,5 +1,8 @@
 import React from 'react'
 import './Home.css'
+import { BsLinkedin } from 'react-icons/bs'
+import { BsGithub } from 'react-icons/bs'
+
 const Home = () => {
   return (
     <header id='home'>
@@ -19,6 +22,16 @@ const Home = () => {
           </a>
           <a href="#contact" className="btn btn-primary">
             Contact Me
+          </a>
+        </div>
+
+        <div className="home_social">
+          <a href="" className="social-link">
+            <BsLinkedin/>
+          </a>
+
+          <a href="" className="social-link">
+            <BsGithub/>
           </a>
         </div>
 
