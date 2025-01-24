@@ -1,6 +1,6 @@
 /* Navbar Container */
 nav {
-    background: var(--bg-color);
+    background: #1c2536b6;
     width: max-content;
     display: flex;
     gap: 0.8rem;

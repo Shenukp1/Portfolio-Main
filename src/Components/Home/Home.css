@@ -29,7 +29,7 @@ header {
 .home_social .social-link {
     color: #ffffff; /* Default white color */
     font-size: 2rem; 
-    margin: 0 2px; /* space between icons top: Y, bottom: x  */
+    margin: 0 4px; /* space between icons top: Y, bottom: x  */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
@@ -56,4 +56,41 @@ h2 {
 
 .highlight{
     color: var(--main-color)
+}
+
+/* media query for medium devices */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 60vh;
+    }
+}
+
+/* media query for small devices */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .home_container {
+        align-items: center; 
+        text-align: center; 
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center; /* Specifically centers the h1 and h2 text */
+    }
+
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .cta {
+        justify-content: center; /* Center-aligns the buttons */
+    }
+
+    .home_social {
+        justify-content: center; /* Center-aligns social links */
+    }
 }

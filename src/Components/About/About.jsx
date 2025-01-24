@@ -8,7 +8,7 @@ import './About.css'
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="about">
       <h5>Get To Know</h5>
       <h2><span className="highlight">About Me</span></h2>
 
@@ -26,9 +26,10 @@ const About = () => {
               <GiGraduateCap className="about_icon" />
               <h5>Degree</h5>
               <small>
-                Bachelor of Science (BSc) in Computer Science <br />
+                Bachelor of Science (BSc) in Computer Science<br />
                 {/*br tag are to break up the line*/}
-                <i>University Of Calgary</i>
+                <i>University Of Calgary</i><br />
+                <i>Sept. 2022 -  2027</i>
                 {/*italizes tag*/}
               </small>
             </article>
@@ -50,16 +51,16 @@ const About = () => {
               <small>Address...</small>
             </article>
           </div>
-          <p>
+          <p className="about_text">
             Hi, I'm Shenuk Perera, and I am currently a Computer Science Student
-            at the University of Calgary. I Excel in Software Development, as i
+            at the University of Calgary. I Excel in Software Development and I
             am experienced in Python and JavaScript, with a focus on web
             application development and system optimization through rigorous
             testing. 
           </p>
 
 
-          <p>
+          <p className="about_text">
             I thrive in collaborative enviroments, and this can be seen
             when I led student teams of up to 20; assigning tasks and supported
             team members with completing tasks when necessary; Excels in
@@ -67,7 +68,7 @@ const About = () => {
             range of individuals. 
           </p>
 
-          <p>
+          <p className="about_text">
             I hold professionalism to a high standard, and
             this shows in my Strong work ethic; going above and beyond to ensure
             task are completed to ensure a stress-free enviroment for

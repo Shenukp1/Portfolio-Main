@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './NavbarTwo.css';
-import { FaHome, FaUser, FaBriefcase, FaClipboardList, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaUser, FaBriefcase, FaClipboardList, FaEnvelope,FaLaptopCode } from 'react-icons/fa';
 
+import { GoChecklist } from "react-icons/go";
 const NavbarTwo = () => {
 
     //state to allow the button to change how it looks when clicked
@@ -13,8 +14,8 @@ const NavbarTwo = () => {
     const tabs = [
         { id: '#', label: 'Home', icon: <FaHome /> },
         { id: '#about', label: 'About Me', icon: <FaUser /> },
-        { id: '#experience', label: 'Experience', icon: <FaBriefcase /> },
-        { id: '#project', label: 'Projects', icon: <FaClipboardList /> },
+        { id: '#skills', label: 'Skills', icon: <FaClipboardList /> },
+        { id: '#projects', label: 'Projects', icon:  <FaLaptopCode/>},
         { id: '#contact', label: 'Contact Info', icon: <FaEnvelope /> }
     ];
 

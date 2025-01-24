@@ -1,0 +1,123 @@
+.skills {
+    min-height: auto;
+    gap: 2rem; /* Adjust spacing between columns */
+    padding-top: 4rem;
+    align-items: stretch; /* Stretch columns to equal height */
+    padding-bottom: 7rem;
+    background: var(--section-bg-color);
+    
+}
+
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the columns horizontally */
+    gap: 4rem;
+    max-width: 100%;
+    
+    
+}
+
+.skills-column {
+    
+    flex: 1; /* Ensure columns share space but wrap at smaller widths */
+    max-width: 25%; /* Limit the column width for side-by-side alignment */
+    display: flex;
+    flex-direction: column; /* Allow internal content to stack vertically */
+    
+}
+
+.skills-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.skills-box .skills-content {
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+
+.skills-content .progress {
+    padding: 1rem 0;
+}
+
+.skills-content .progress h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-content .progress h3 span{
+    color: var(--text-color);
+}
+
+.bar {
+
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color)
+    
+}
+
+
+/* ========== Adjust skills ========== */
+
+
+
+/* Coding Skills */
+.skills-column:nth-child(1) .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+/* python */
+.skills-column:nth-child(1) .progress:nth-child(2) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .progress:nth-child(3) .bar span{
+    width: 100%;
+}
+
+.skills-column:nth-child(1) .progress:nth-child(4) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .progress:nth-child(5) .bar span{
+    width: 80%;
+}
+
+
+
+/* frameworks and libraries */
+
+.skills-column:nth-child(2) .progress:nth-child(1) .bar span{
+    width: 100%;
+}
+
+/* python */
+.skills-column:nth-child(2) .progress:nth-child(2) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .progress:nth-child(3) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(2) .progress:nth-child(4) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .progress:nth-child(5) .bar span{
+    width: 70%;
+}

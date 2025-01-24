@@ -1,0 +1,67 @@
+
+
+.project_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.project_item {
+    background: var(--bg-color);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    align-items: center; /* Center-align content */
+    transition: background 0.3s ease, color 0.3s ease;;
+}
+
+.project_item:hover {
+    border-color: var(--main-color);
+    background: transparent;
+}
+
+
+.project_item_image {
+    border-radius: 1.5rem;
+    object-fit: cover; /* Crops the image to fit without distortion */
+    width: 100%; /* Make the image container span full width */
+    overflow: hidden;
+}
+
+.project_item_image img {
+    width: 100%; /* Ensures image stretches across the container */
+    height: 100%; /* Ensures image fills container vertically */
+    object-fit: cover; /* Crops the image to fit without distortion */
+    object-position: center; /* Centers the image within the container */
+    display: block; /* Removes unwanted inline spacing */
+    
+}
+
+
+.project_item h3 {
+    margin: 1.2rem 0 0.5rem;
+}
+
+.project_item_btn {
+    margin: 2rem 0;
+}
+
+
+/* media query for medium devices */
+@media screen and (max-width: 1024px) {
+    .project_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* for small devices */
+@media screen and (max-width: 600px) {
+    .project_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

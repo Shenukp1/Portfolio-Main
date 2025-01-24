@@ -1,4 +1,11 @@
 
+
+.about{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
 .about_container {
     display: flex;
     justify-content: center;
@@ -15,7 +22,7 @@
 .about_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    gap: 2.8rem;
     
 }
 
@@ -23,9 +30,12 @@
     background: var(--bg-color);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 0.7rem;
+    padding: 1rem;
     text-align: center;
-    transition: var(--transition);
+    transition: background 0.3s ease, color 0.3s ease;
+    min-height: 250px; /* Set a minimum height for the cards */
+    max-width: 250px;
+    margin-bottom: 2rem;
 }
 
 .about_card:hover {
@@ -36,22 +46,30 @@
 
 .about_icon {
     color: var(--main-color);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-top: .5rem;
     margin-bottom: 0.4rem;
 }
 
 .about_card small {
     font-size: 0.7rem;
-    color: var(--color-primary);
+    display: block; /* Ensure it takes up full width */
+    line-height: 1.5rem; /* Increase line spacing for better readability */
+    color: var(--text-color);
+    
+    
 }
 
 .about_card h5 {
+    margin-bottom: 1rem;
     font-size: 0.95rem;
 }
 
 .about_content p {
     margin: 2rem 0 2.6rem;
     color: var(--text-color);
+    text-align: justify; /* make text fill container*/
+    padding: 0 100px; /* Add padding to compress text inward */
 }
 
 /* media query for medium device */
