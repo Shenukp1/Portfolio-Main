@@ -26,11 +26,11 @@ const Home = () => {
         </div>
 
         <div className="home_social">
-          <a href="" className="social-link">
+          <a href="www.linkedin.com/in/shenuk-perera" className="social-link">
             <BsLinkedin/>
           </a>
 
-          <a href="" className="social-link">
+          <a href="https://github.com/Shenukp1" className="social-link">
             <BsGithub/>
           </a>
         </div>

@@ -121,3 +121,47 @@
 .skills-column:nth-child(2) .progress:nth-child(5) .bar span{
     width: 70%;
 }
+
+
+/* media query for medium devices */
+@media screen and (max-width: 1024px) {
+    .skills-row {
+        gap: 2rem; /* Reduce spacing for better fit */
+    }
+
+    .skills-column {
+        max-width: 45%; /* Allow two columns side by side */
+    }
+
+    .skills-column .title {
+        font-size: 2rem;
+    }
+
+    .skills-content .progress h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* for small devices */
+@media screen and (max-width: 600px) {
+    .skills-row {
+        flex-direction: column;
+        gap: 1.5rem; /* Reduce spacing further for small screens */
+    }
+
+    .skills-column {
+        max-width: 100%; /* Stack columns vertically */
+    }
+
+    .skills-column .title {
+        font-size: 1.8rem;
+    }
+
+    .skills-content .progress h3 {
+        font-size: 1.3rem;
+    }
+
+    .bar {
+        height: 2rem; /* Adjust bar height for smaller screens */
+    }
+}

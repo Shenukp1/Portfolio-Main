@@ -16,7 +16,7 @@ const NavbarTwo = () => {
         { id: '#about', label: 'About Me', icon: <FaUser /> },
         { id: '#skills', label: 'Skills', icon: <FaClipboardList /> },
         { id: '#projects', label: 'Projects', icon:  <FaLaptopCode/>},
-        { id: '#contact', label: 'Contact Info', icon: <FaEnvelope /> }
+        
     ];
 
     return (
